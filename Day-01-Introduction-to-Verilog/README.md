@@ -54,7 +54,8 @@ gtkwave tb_good_mux.vcd
 
 **Screenshot 1: MUX Simulation Waveform**
 
-![MUX Waveform](screenshots/mux_waveform.png)
+<img width="1917" height="1198" alt="Screenshot 2026-11-19 151745" src="https://github.com/user-attachments/assets/f3f8e1df-8e99-42fe-b0f7-b2bef6348cd6" />
+
 
 ## 3. SKY130 Library Exploration
 
@@ -69,6 +70,9 @@ Process Corners:
 - **TT:** Typical-Typical
 - **FF:** Fast-Fast
 - **SS:** Slow-Slow
+
+<img width="1917" height="1198" alt="Screenshot 2026-11-19 153011" src="https://github.com/user-attachments/assets/ad8eca7e-45c8-48ee-aba8-e4c2fcc9d4af" />
+
 
 ## 4. MUX Synthesis Using Yosys
 
@@ -122,7 +126,8 @@ write_verilog -noattr good_mux_netlist.v
 
 **Screenshot 2: Synthesized MUX Schematic**
 
-![MUX Schematic](screenshots/mux.png)
+<img width="1033" height="757" alt="Screenshot 2026-11-19 185449" src="https://github.com/user-attachments/assets/e4a28a72-2c18-4842-814b-594f2f2f6ec1" />
+
 
 ## 5. Key Learnings
 
