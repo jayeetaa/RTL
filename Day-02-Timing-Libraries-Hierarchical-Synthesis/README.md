@@ -92,19 +92,6 @@ Understand the fundamentals of timing libraries, hierarchical RTL design, and sy
 - **Design Comparison:** Compared the synthesized logic for multiplication by 2 and multiplication by 8.
 <img width="1916" height="495" alt="Screenshot 2026-11-20 152229" src="https://github.com/user-attachments/assets/41554b25-2581-4816-8c90-0cd3a849100f" />
 
-## Screenshots
-
-The following screenshots show the circuit representations and synthesis outputs obtained during the experiments.
-
-- **1_multiple_hier.png:** Hierarchical representation of a multiple-module Verilog design.
-- **2_multiple_flat.png:** Flattened representation after removing the module hierarchy.
-- **3_sub_module.png:** Synthesized circuit representation of an individual submodule.
-- **4_async_res.png:** Circuit representation of asynchronous reset logic.
-- **5_async_set.png:** Circuit representation of asynchronous set logic.
-- **6_sync_reset.png:** Circuit representation of synchronous reset logic.
-- **7_mult_2.png:** Synthesized logic representation for multiplication by 2.
-- **8_mult_8.png:** Synthesized logic representation for multiplication by 8.
-
 ## Key Learnings
 
 - Gained an understanding of timing libraries and their importance in digital design.
