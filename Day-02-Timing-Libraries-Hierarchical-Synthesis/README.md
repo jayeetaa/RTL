@@ -27,6 +27,8 @@ Understand the fundamentals of timing libraries, hierarchical RTL design, and sy
 - **Top Module:** Identified the top-level module and studied how it instantiates lower-level modules.
 - **Hierarchy Check:** Used Yosys to verify module definitions and their connections.
 - **Hierarchical Representation:** Visualized the design while preserving its original module hierarchy.
+<img width="1690" height="637" alt="Screenshot 2026-11-19 211904" src="https://github.com/user-attachments/assets/a80aec0c-9309-404c-8e85-417420adb1dd" />
+
 
 ## 3. Flattening of Hierarchical Designs
 
@@ -34,6 +36,8 @@ Understand the fundamentals of timing libraries, hierarchical RTL design, and sy
 - **Module Integration:** Observed how submodule logic is incorporated into the top-level design.
 - **Design Comparison:** Compared hierarchical and flattened circuit representations.
 - **Synthesis Analysis:** Understood how flattening changes the internal structure of the synthesized design.
+<img width="1747" height="528" alt="Screenshot 2026-11-20 092010" src="https://github.com/user-attachments/assets/f2f5c23d-5ec0-45b7-a6f6-120576827490" />
+
 
 ## 4. Submodule Analysis
 
@@ -41,6 +45,8 @@ Understand the fundamentals of timing libraries, hierarchical RTL design, and sy
 - **Module Functionality:** Studied the logic implemented inside a submodule.
 - **Synthesis Visualization:** Used Yosys and Graphviz to inspect the submodule circuit representation.
 - **Design Hierarchy:** Understood the relationship between parent modules and instantiated submodules.
+<img width="910" height="662" alt="Screenshot 2026-11-20 094240" src="https://github.com/user-attachments/assets/7b47999e-79fc-4316-9db2-a4c55fba049c" />
+
 
 ## 5. Asynchronous Reset
 
@@ -48,6 +54,9 @@ Understand the fundamentals of timing libraries, hierarchical RTL design, and sy
 - **Reset Operation:** Analyzed the behavior of the circuit when the reset signal is asserted.
 - **RTL Implementation:** Explored the Verilog description of asynchronous reset logic.
 - **Synthesis Representation:** Observed how Yosys represents asynchronous reset functionality during synthesis.
+<img width="1452" height="1032" alt="Screenshot 2026-11-20 104815" src="https://github.com/user-attachments/assets/f9bcf641-5063-4ce8-90f3-72b9569b833b" />
+<img width="1917" height="535" alt="Screenshot 2026-11-20 143351" src="https://github.com/user-attachments/assets/a5a17638-337c-4ba3-a652-1626ca598a26" />
+
 
 ## 6. Asynchronous Set
 
@@ -55,6 +64,8 @@ Understand the fundamentals of timing libraries, hierarchical RTL design, and sy
 - **Output Behavior:** Studied how the output changes when the set signal is activated.
 - **RTL Analysis:** Examined the corresponding Verilog implementation.
 - **Circuit Representation:** Observed the synthesized logic structure for asynchronous set functionality.
+<img width="1915" height="515" alt="Screenshot 2026-11-20 145110" src="https://github.com/user-attachments/assets/0ea0c944-5067-459e-a28e-0ecc23302d50" />
+
 
 ## 7. Synchronous Reset
 
@@ -62,6 +73,8 @@ Understand the fundamentals of timing libraries, hierarchical RTL design, and sy
 - **Clock Dependency:** Understood the relationship between the clock signal and reset operation.
 - **RTL Implementation:** Analyzed the synchronous reset logic described in Verilog.
 - **Comparison:** Explored the differences between synchronous and asynchronous reset mechanisms.
+<img width="1917" height="480" alt="Screenshot 2026-11-20 145945" src="https://github.com/user-attachments/assets/2ef89514-41db-44a6-807a-3a6b96c5ec2e" />
+
 
 ## 8. Multiplication by 2
 
@@ -69,6 +82,7 @@ Understand the fundamentals of timing libraries, hierarchical RTL design, and sy
 - **Logic Optimization:** Observed how Yosys simplifies arithmetic operations during synthesis.
 - **Shift Operation:** Understood the relationship between multiplication by 2 and a left-shift operation in binary arithmetic.
 - **Synthesis Analysis:** Inspected the resulting optimized circuit representation.
+<img width="1917" height="760" alt="Screenshot 2026-11-20 151046" src="https://github.com/user-attachments/assets/12cfa0fc-96ad-4ccb-aebc-9d9609db9677" />
 
 ## 9. Multiplication by 8
 
@@ -76,6 +90,7 @@ Understand the fundamentals of timing libraries, hierarchical RTL design, and sy
 - **Binary Representation:** Studied the relationship between multiplication by 8 and shifting a binary value by three positions.
 - **Optimization:** Observed how constant arithmetic operations can be simplified during synthesis.
 - **Design Comparison:** Compared the synthesized logic for multiplication by 2 and multiplication by 8.
+<img width="1916" height="495" alt="Screenshot 2026-11-20 152229" src="https://github.com/user-attachments/assets/41554b25-2581-4816-8c90-0cd3a849100f" />
 
 ## Screenshots
 
