@@ -61,6 +61,8 @@ end
 
 endmodule
 ```
+<img width="1917" height="702" alt="Screenshot 2026-11-21 111703" src="https://github.com/user-attachments/assets/1a9398cc-2564-4e07-b397-75d01168311e" />
+<img width="1917" height="412" alt="Screenshot 2026-11-21 112239" src="https://github.com/user-attachments/assets/d1afaba7-8c8f-402c-998d-b83da8a4b53e" />
 
 ### Explanation
 
@@ -105,6 +107,8 @@ end
 
 endmodule
 ```
+<img width="1915" height="832" alt="Screenshot 2026-11-21 113952" src="https://github.com/user-attachments/assets/3899982a-381d-49d6-8479-209d441e116f" />
+<img width="1917" height="725" alt="Screenshot 2026-11-21 113610" src="https://github.com/user-attachments/assets/dc40a441-ef2a-4223-ae33-a604ee2e4221" />
 
 ### Explanation
 
@@ -165,6 +169,8 @@ endmodule
 - A complete CASE statement handles all selector combinations.
 - The default branch handles the remaining conditions.
 - Complete assignments allow combinational logic to be synthesized without an unintended latch.
+<img width="1917" height="790" alt="Screenshot 2026-11-21 115302" src="https://github.com/user-attachments/assets/d9340748-f2db-430d-b4fe-06e8bd0ae128" />
+<img width="1917" height="890" alt="Screenshot 2026-11-21 115525" src="https://github.com/user-attachments/assets/f49cd8e1-5b76-4209-8d5d-a9facb9edbb3" />
 
 ## 5. Incomplete CASE Statement
 
@@ -190,6 +196,8 @@ end
 
 endmodule
 ```
+<img width="1917" height="780" alt="Screenshot 2026-11-21 114425" src="https://github.com/user-attachments/assets/fa56ea68-46cd-40a3-87f9-0a0f5c089ae7" />
+<img width="1173" height="835" alt="Screenshot 2026-11-21 114714" src="https://github.com/user-attachments/assets/07c9dbc7-e8d7-4eb8-bdb1-7748c4a781dc" />
 
 ### Explanation
 
@@ -246,6 +254,7 @@ end
 
 endmodule
 ```
+<img width="1917" height="1198" alt="Screenshot 2026-11-21 120650" src="https://github.com/user-attachments/assets/127e03d8-97e4-4903-9eae-47317e349eeb" />
 
 ### Explanation
 
@@ -317,6 +326,7 @@ end
 
 endmodule
 ```
+<img width="1917" height="985" alt="Screenshot 2026-11-21 121651" src="https://github.com/user-attachments/assets/e334cf2e-21f5-47ee-b502-7e6bd06f8a7b" />
 
 ### Understanding the CASE Pattern
 
@@ -401,6 +411,7 @@ end
 
 endmodule
 ```
+<img width="1917" height="905" alt="Screenshot 2026-11-21 123113" src="https://github.com/user-attachments/assets/48659b73-7906-4d3c-af6e-42bf463d7d74" />
 
 ### Explanation
 
@@ -469,6 +480,7 @@ end
 
 endmodule
 ```
+<img width="1917" height="950" alt="Screenshot 2026-11-21 123658" src="https://github.com/user-attachments/assets/9c3fc0e1-08aa-4947-adfb-c3e0221ba75e" />
 
 ### Explanation
 
@@ -536,58 +548,8 @@ endmodule
 
 Both implementations describe the same basic DEMUX functionality.
 
-## 13. Generate FOR Loop
 
-A Generate FOR loop is used to replicate hardware structures during elaboration.
-
-Unlike a procedural FOR loop, a Generate FOR loop is written outside procedural always blocks.
-
-### Syntax
-
-```verilog
-genvar i;
-
-generate
-    for (i = 0; i < N; i = i + 1) begin
-        // Hardware or module instantiation
-    end
-endgenerate
-```
-
-### Applications
-
-- Repeated hardware structures.
-- Full-adder chains.
-- Ripple Carry Adders.
-- Repeated module instantiations.
-- Parameterized hardware designs.
-
-### Role of GENVAR
-
-A `genvar` is used to index generated hardware during elaboration.
-
-### Generate IF
-
-A conditional generate statement can instantiate hardware depending on an elaboration-time condition.
-
-```verilog
-generate
-    if (CONDITION) begin
-        // Hardware instantiated when condition is true
-    end
-endgenerate
-```
-
-### Procedural FOR vs Generate FOR
-
-| Procedural FOR | Generate FOR |
-|---|---|
-| Written inside procedural blocks | Written outside procedural blocks |
-| Uses an integer variable | Uses a genvar |
-| Describes repetitive procedural operations | Replicates hardware structures |
-| Commonly used for combinational logic | Commonly used for module instantiation |
-
-## 14. Ripple Carry Adder Using Generate
+## 13. Ripple Carry Adder Using Generate
 
 A Ripple Carry Adder (RCA) is constructed by connecting multiple full adders in a chain.
 
@@ -652,6 +614,7 @@ assign sum[8] = int_co[7];
 
 endmodule
 ```
+<img width="1917" height="947" alt="Screenshot 2026-11-21 124121" src="https://github.com/user-attachments/assets/ad2c1244-fb63-49c4-8767-26ffe5d8beb2" />
 
 ### Working Principle
 
@@ -680,7 +643,7 @@ Therefore, the output is declared as `output [8:0] sum`.
 
 The Generate FOR loop simplifies the construction of repetitive full-adder hardware and makes the design easier to scale.
 
-## 15. Simulation and Synthesis Commands
+## 14. Simulation and Synthesis Commands
 
 ### Compile Verilog Design
 
@@ -736,7 +699,7 @@ show
 exit
 ```
 
-## 16. Key Learnings
+## 15. Key Learnings
 
 - IF-ELSE statements can infer priority MUX logic.
 - Incomplete IF statements can infer latches.
@@ -752,7 +715,7 @@ exit
 - RTL coding style directly affects the hardware inferred during synthesis.
 - RTL simulation and gate-level simulation help verify hardware behavior.
 
-## 17. Conclusion
+## 16. Conclusion
 
 Day 5 provided practical exposure to optimization in synthesis through different Verilog RTL coding styles.
 
