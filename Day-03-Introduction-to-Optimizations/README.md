@@ -345,6 +345,34 @@ The least significant bit toggles on every clock cycle.
 
 The optimized implementation requires only the sequential logic needed to generate the least significant bit.
 
+### Experiment 13: counter_opt2
+
+**Verilog Code (`counter_opt2.v`)**
+
+```verilog
+module counter_opt2 (
+    input clk,
+    input reset,
+    output q
+);
+
+reg [2:0] count;
+
+assign q = (count[2:0] == 3'b100);
+
+always @(posedge clk, posedge reset)
+begin
+    if(reset)
+        count <= 3'b000;
+    else
+        count <= count + 1;
+end
+
+endmodule
+```
+<img width="1917" height="570" alt="Screenshot 2026-11-21 085529" src="https://github.com/user-attachments/assets/d08955f9-0289-4332-9d4d-fcc771fbe935" />
+
+
 ## 5. Yosys Optimization Commands
 
 The following commands are used to read the Verilog design, perform synthesis, optimize the logic, and display the resulting circuit.
